@@ -1,0 +1,189 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>site finished</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
+  <script src="https://sdk.form.run/js/v2/formrun.js"></script>
+</head>
+<body>
+
+<br/>
+<div class="container">
+  <div class="pswp-gallery"><figure style ="width:400px;" class="wp-caption alignnone"><a href='https://lh3.googleusercontent.com/pJF5lm8WhrTZoWMRFOl-eWfF49-W6EgoCpPeHZNdDS4K2qvnTYJfDyBJ4gWjmzbGO3j_ky9XwaVwsoOFaQujiq6V69XSgexFa23Slev5QgvVoLg06eHcuQJ_cpMYiYrMc_0Ss-cn=w400-h410' data-size='400x410' target='_blank' rel='noopener'><img width="400" height="410" src="https://lh3.googleusercontent.com/pJF5lm8WhrTZoWMRFOl-eWfF49-W6EgoCpPeHZNdDS4K2qvnTYJfDyBJ4gWjmzbGO3j_ky9XwaVwsoOFaQujiq6V69XSgexFa23Slev5QgvVoLg06eHcuQJ_cpMYiYrMc_0Ss-cn=w400-h410" class="photoembed-maker" ></a><figcaption class="wp-caption-text"><a href="https://celtislab.net/photoembed-maker/" target="_blank" rel="nofollow noopener">Photo Embed by Google Photos</a></figcaption></figure></div>
+  <div class="card">
+    <h4 class="card-header" data-formrun-hide-if-confirm>職長完了報告</h4>
+    <h4 class="card-header" data-formrun-show-if-confirm>報告内容の確認と送信</h4>
+
+    <div class="card-block">
+      <div class="mx-auto">
+        <h5 class="card-title">2020年5月21日(木)</h5>
+        <h5 class="card-title">【玉俊 ダイソー春日倉庫】</h5>
+      </div>
+
+      <form class="formrun" action="#" method="get" data-formrun-confirm>
+        <div class="form-group row"
+            data-formrun-class-if-success="has-success" data-formrun-class-if-error="has-danger" data-formrun-target="開始時間">
+          <label class="col-xs-4 col-form-label" for="name">開始時間</label>
+          <div class="col-xs-8" data-formrun-hide-if-confirm>
+            <input type="time" class="form-control" id="name" name="開始時間" value="09:00"
+                  data-formrun-required data-formrun-class-if-success="form-control-success" data-formrun-class-if-error="form-control-danger">
+            <div class="text-danger" data-formrun-show-if-error="開始時間">入力してください</div>
+          </div>
+          <div class="col-xs-8" data-formrun-show-if-confirm>
+            <span data-formrun-confirm-value="開始時間"></span>
+          </div>
+        </div>
+        <div class="form-group row"
+            data-formrun-class-if-success="has-success" data-formrun-class-if-error="has-danger" data-formrun-target="終了時間">
+          <label class="col-xs-4 col-form-label" for="name">終了時間</label>
+          <div class="col-xs-8" data-formrun-hide-if-confirm>
+            <input type="time" class="form-control" id="name" name="終了時間" value="17:00"
+                  data-formrun-required data-formrun-class-if-success="form-control-success" data-formrun-class-if-error="form-control-danger">
+            <div class="text-danger" data-formrun-show-if-error="終了時間">入力してください</div>
+          </div>
+          <div class="col-xs-8" data-formrun-show-if-confirm>
+            <span data-formrun-confirm-value="終了時間"></span>
+          </div>
+        </div>
+        
+        <div class="form-group row">
+          <label class="col-xs-3 col-form-label">社用車</label>
+          <div class="col-xs-9" data-formrun-hide-if-confirm>
+            <select class="form-control form-control-lg" name="社用車" data-formrun-required>
+              <option value>--選択してください--</option>
+              <option value="ハイ①7661">ハイ①7661</option>
+              <option value="ハイ②7662">ハイ②7662</option>
+              <option value="ハイ③7663">ハイ③7663</option>
+              <option value="ハイ④7664">ハイ④7664</option>
+              <option value="ハイ⑤7665">ハイ⑤7665</option>
+              <option value="ハイ⑥7666" selected>ハイ⑥7666</option>
+              <option value="その他">その他</option>
+            </select>
+            <span class="text-danger" data-formrun-show-if-error="社用車">正しく入力してください</span>
+          </div>
+          <div class="col-xs-9" data-formrun-show-if-confirm>
+            <span data-formrun-confirm-value="社用車"></span>
+          </div>
+        </div>
+        
+        <div class="form-group row">
+          <label class="col-xs-3 col-form-label">部材</label>
+          <div class="col-xs-9" data-formrun-hide-if-confirm>
+            <select class="form-control form-control-lg" name="部材" data-formrun-required>
+              <option value>--選択してください--</option>
+              <option value="ボンド">ボンド</option>
+              <option value="柱巻きネット加工">柱巻きネット加工</option>
+              <option value="サンダー">サンダー</option>
+              <option value="加工道具">加工道具</option>
+              <option value="石膏ボード">石膏ボード</option>
+              <option value="その他">その他</option>
+            </select>
+            <span class="text-danger" data-formrun-show-if-error="部材">正しく入力してください</span>
+          </div>
+          <div class="col-xs-9" data-formrun-show-if-confirm>
+            <span data-formrun-confirm-value="部材"></span>
+          </div>
+        </div>
+
+        <div class="form-group row"
+            data-formrun-class-if-success="has-success" data-formrun-class-if-error="has-danger" data-formrun-target="経費">
+          <label class="col-xs-4 col-form-label" for="name">経費</label>
+          <div class="col-xs-8" data-formrun-hide-if-confirm>
+            <input type="number" class="form-control" id="name" name="経費"
+                  data-formrun-required data-formrun-class-if-success="form-control-success" data-formrun-class-if-error="form-control-danger">
+            <div class="text-danger" data-formrun-show-if-error="経費">入力してください</div>
+          </div>
+          <div class="col-xs-8" data-formrun-show-if-confirm>
+            <span data-formrun-confirm-value="経費"></span>
+          </div>
+        </div>
+<!--
+        <fieldset class="form-group row">
+          <span class="col-xs-3 col-form-label">性別</span>
+          <div class="col-xs-9" data-formrun-hide-if-confirm>
+            <label class="form-check-label form-check-inline">
+              <input class="form-check-input" type="radio" name="性別" value="男性" data-formrun-required>
+              男性
+            </label>
+            <label class="form-check-label form-check-inline">
+              <input class="form-check-input" type="radio" name="性別" value="女性" data-formrun-required>
+              女性
+            </label>
+            <br>
+            <span class="text-danger" data-formrun-show-if-error="性別">性別を入力してください</span>
+          </div>
+          <div class="col-xs-9" data-formrun-show-if-confirm>
+            <span data-formrun-confirm-value="性別"></span>
+          </div>
+        </fieldset>
+
+        <div class="form-group row">
+          <label class="col-xs-3 col-form-label">業種</label>
+          <div class="col-xs-9" data-formrun-hide-if-confirm>
+            <select class="form-control form-control-lg" name="業種" data-formrun-required>
+              <option value>--選択してください--</option>
+              <option value="IT">IT</option>
+              <option value="メーカー">メーカー</option>
+              <option value="商社">商社</option>
+              <option value="医療">医療</option>
+              <option value="金融">金融</option>
+              <option value="建設・不動産">建設・不動産</option>
+              <option value="金融">金融</option>
+              <option value="人材">人材</option>
+              <option value="小売">小売</option>
+              <option value="飲食">飲食</option>
+              <option value="物流">物流</option>
+              <option value="その他">その他</option>
+            </select>
+            <span class="text-danger" data-formrun-show-if-error="業種">業種を正しく入力してください</span>
+          </div>
+          <div class="col-xs-9" data-formrun-show-if-confirm>
+            <span data-formrun-confirm-value="業種"></span>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label class="col-xs-3">職種</label>
+          <div class="col-xs-9" data-formrun-hide-if-confirm>
+            <div class="form-check">
+              <label class="form-check-label"><input class="form-check-input" type="checkbox" name="職種[]" value="営業" data-formrun-required> 営業</label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label"><input class="form-check-input" type="checkbox" name="職種[]" value="マーケ" data-formrun-required> マーケ</label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label"><input class="form-check-input" type="checkbox" name="職種[]" value="開発" data-formrun-required> 開発</label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label"><input class="form-check-input" type="checkbox" name="職種[]" value="デザイン" data-formrun-required> デザイン</label>
+            </div>
+            <span class="text-danger" data-formrun-show-if-error="職種[]">職種を正しく入力してください</span>
+          </div>
+
+          <div class="col-xs-9" data-formrun-show-if-confirm>
+            <span data-formrun-confirm-value="職種[]"></span>
+          </div>
+        </div>
+-->
+        <div class="_formrun_gotcha">
+          <style media="screen">._formrun_gotcha {position:absolute!important;height:1px;width:1px;overflow:hidden;}</style>
+          <label for="_formrun_gotcha">If you are a human, ignore this field</label>
+          <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
+        </div>
+
+        <br>
+        <div>
+          <a href="javascript:void(0)" class="btn btn-secondary" data-formrun-back-button>戻る</a>
+          <button type="submit" class="btn btn-primary pull-xs-right" data-formrun-error-text="未入力の項目があります" data-formrun-send-text="送信する" data-formrun-submitting-text="送信中...">確認</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+</div><!-- /.container -->
+
+</body>
+</html>

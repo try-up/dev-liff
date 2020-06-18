@@ -1,0 +1,376 @@
+@charset "UTF-8";
+/*!
+ * File Name: lp-custom.css 
+ * Description: lp.css をオーバーライドして、カスタマイズしているCSSです。編集するなどしてご利用ください。
+ */
+/* font-family（フォント）
+--------------------------------------------------------- */
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.woff2") format("woff2"), url("https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.woff") format("woff"), url("https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.woff2") format("woff2"), url("https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.woff") format("woff"), url("https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.otf") format("opentype");
+}
+
+
+body {
+  font-family: 'Noto Sans Japanese', 'Open Sans', sans-serif;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+}
+
+/* body
+--------------------------------------------------------- */
+body {
+  background-color: #333;
+  color: #333;
+}
+
+/* button（ボタン）
+--------------------------------------------------------- */
+.lp-c-button {
+  background-color: #1809ee;
+  color: #FFF;
+}
+
+/* header
+--------------------------------------------------------- */
+.lp-sec-header {
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.lp-sec-header > .lp-block .lp-logo img {
+  width: 80px;
+  height: 80px;
+}
+
+.lp-sec-header > .lp-block .lp-title {
+  font-size: 24px;
+  color: #333;
+}
+
+@media screen and (max-width: 560px) {
+  .lp-sec-header > .lp-block .lp-logo img {
+    width: 50px;
+    height: 50px;
+  }
+  .lp-sec-header > .lp-block .lp-title {
+    font-size: 16px;
+  }
+}
+
+/* band
+   bandArrow
+--------------------------------------------------------- */
+.lp-sec-band > .lp-block {
+  background-color: #0048A8;
+  color: #fff;
+}
+
+.lp-sec-band--arrow > .lp-block::after {
+  color: #0048A8;
+}
+
+@media screen and (max-width: 560px) {
+  .lp-sec-big--center > .lp-block > .lp-title {
+      font-size: 3.3rem;
+  }
+}
+
+/* BigCenter
+   BigLeft
+   BigRight
+   BigText
+--------------------------------------------------------- */
+.lp-sec-big {
+  background-color: #fff;
+  background-image: url(../../img/2968317_m.jpg);
+}
+
+.lp-sec-big--center > .lp-block > .lp-title {
+  font-family: Bodoni serif;
+  color: rgb(247, 247, 245);
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 2px 3px rgb(61, 61, 61), 0 0 1em rgb(247, 247, 248), 0 0 .2em rgb(4, 129, 245);
+  font-variant: small-caps;
+}
+
+.lp-sec-big--center > .lp-block > .lp-text {
+  color: rgb(3, 3, 3);
+  text-shadow: 0 0 1em rgb(247, 247, 248), 0 0 .2em rgb(4, 129, 245);
+}
+
+.lp-sec-big--left > .lp-block > .lp-title {
+  color: #333;
+}
+
+.lp-sec-big--left > .lp-block > .lp-text {
+  color: #333;
+}
+
+.lp-sec-big--right > .lp-block > .lp-title {
+  color: #333;
+}
+
+.lp-sec-big--right > .lp-block > .lp-text {
+  color: #333;
+}
+
+.lp-sec-big--text > .lp-block > .lp-title {
+  color: #333;
+}
+
+.lp-sec-big--text > .lp-block > .lp-text {
+  color: #333;
+}
+
+/* ImageCenter
+   ImageLeft
+   ImageRight
+--------------------------------------------------------- */
+.lp-sec-image {
+  background-color: #fff;
+}
+
+.lp-sec-image > .lp-block > .lp-title {
+  color: #333;
+}
+
+.lp-sec-image > .lp-block > .lp-text {
+  color: #333;
+}
+
+.lp-sec-image--center > .lp-block > .lp-item .lp-item__contents > .lp-title {
+  color: #333;
+}
+
+.lp-sec-image--center > .lp-block > .lp-item .lp-item__contents > .lp-text {
+  color: #333;
+}
+
+.lp-sec-image--left > .lp-block > .lp-item .lp-item__contents > .lp-title {
+  color: #333;
+}
+
+.lp-sec-image--left > .lp-block > .lp-item .lp-item__contents > .lp-text {
+  color: #333;
+}
+
+.lp-sec-image--right > .lp-block > .lp-item .lp-item__contents > .lp-title {
+  color: #333;
+}
+
+.lp-sec-image--right > .lp-block > .lp-item .lp-item__contents > .lp-text {
+  color: #333;
+}
+
+/* FullImageCenter
+   FullImageLeft
+   FullImageRight
+--------------------------------------------------------- */
+.lp-sec-fullimage {
+  background-color: #fff;
+}
+
+.lp-sec-fullimage--center > .lp-block > .lp-item .lp-item__contents > .lp-title {
+  color: #333;
+}
+
+.lp-sec-fullimage--center > .lp-block > .lp-item .lp-item__contents > .lp-text {
+  color: #333;
+}
+
+.lp-sec-fullimage--left > .lp-block > .lp-item .lp-item__contents > .lp-title {
+  color: #333;
+}
+
+.lp-sec-fullimage--left > .lp-block > .lp-item .lp-item__contents > .lp-text {
+  color: #333;
+}
+
+.lp-sec-fullimage--right > .lp-block > .lp-item .lp-item__contents > .lp-title {
+  color: #333;
+}
+
+.lp-sec-fullimage--right > .lp-block > .lp-item .lp-item__contents > .lp-text {
+  color: #333;
+}
+
+/* Inline2
+   Inline2Arrow
+   Inline3
+   Inline3Arrow
+   Inline4
+   Inline4Arrow
+   Inline5
+   Inline5Arrow
+   Inline2Circle
+   Inline2CircleArrow
+   Inline3Circle
+   Inline3CircleArrow
+   Inline4Circle
+   Inline4CircleArrow
+   Inline5Circle
+   Inline5CircleArrow
+--------------------------------------------------------- */
+.lp-sec-inline {
+  background-color: #fff;
+}
+
+.lp-sec-inline > .lp-block > .lp-title {
+  color: #333;
+}
+
+.lp-sec-inline > .lp-block > .lp-text {
+  color: #333;
+}
+
+.lp-sec-inline > .lp-block > .lp-list .lp-list__item > .lp-item .lp-item__contents > .lp-title {
+  color: #333;
+}
+
+.lp-sec-inline > .lp-block > .lp-list .lp-list__item > .lp-item .lp-item__contents > .lp-text {
+  color: #333;
+}
+
+.lp-sec-inline--arrow > .lp-block > .lp-list .lp-list__item::before {
+  color: #333;
+}
+
+/* List
+--------------------------------------------------------- */
+.lp-sec-list {
+  background-color: #fff;
+}
+
+.lp-sec-list > .lp-block > .lp-title {
+  color: #333;
+}
+.yellow_line {
+  background:rgba(0, 0, 0, 0) linear-gradient(transparent 45%, #ffffbc) repeat scroll 0 0;
+}
+
+.lp-sec-list > .lp-block > .lp-text {
+  color: #333;
+}
+
+.lp-sec-list > .lp-block > .lp-list > .lp-item {
+  color: #333;
+}
+
+.lp-sec-list > .lp-block > .lp-list > .lp-item::before {
+  color: #333;
+}
+
+/* footer
+--------------------------------------------------------- */
+.lp-sec-footer {
+  background-color: #333;
+}
+
+.lp-sec-footer > .lp-block .lp-copyright {
+  color: #fff;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 560px) {
+  .lp-sec-footer > .lp-block .lp-copyright {
+    font-size: 12px;
+  }
+}
+
+/* table
+--------------------------------------------------------- */
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+  width: 80%;
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+table tr:last-child{
+  border-bottom:solid 1px #ddd;
+}
+
+table th{
+  text-align: center;
+  padding: 7px 0;
+  border-right:solid 1px #ddd;
+  border-left:solid 1px #ddd;
+  width: 155px;
+}
+
+table th:nth-child(1){
+  background-color:#00BFFF;
+}
+
+table th:nth-child(3){
+  background-color:#f5b932;
+  color: white;
+}
+
+table tr:nth-child(2) td{
+  font-size: 20px;
+}
+
+table td{
+  text-align: center;
+  padding: 7px 0;
+  border-right:solid 1px #ddd;
+  border-left:solid 1px #ddd;
+  width: 155px;
+}
+
+table td a{
+  background-color: #25b327;
+  color: white;
+  padding:5px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+table .popular{
+  width: 180px;
+}
+
+table th.popular{
+  position: relative;
+}
+
+table th.popular span.no1{
+  position: absolute;
+  top: -10px;
+  left:calc(50% - 30px);
+  background: #bdcc28;
+  width: 60px;
+  font-size: 10px;
+  border-radius: 15px;
+  line-height: 1;
+  padding: 5px;
+}
+
+table th.popular span.inner{
+  position: absolute;
+  color:white;
+  background-color: #dfdfdf;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 180px;
+  padding: 10px 0;
+}
